@@ -93,13 +93,7 @@ The report documents:
 
 The report's page 6 figure compares speed limit, raw odometry versus EKF drift, and cumulative control effort over approximately 182 seconds. It marks the LiDAR blackout around 48–52 s, wheel-slip interval around 112–117 s and eco mode from about 155 s. The reported wheel-slip peak is 0.51 m; the eco profile produces a gentler cumulative control-effort slope.
 
-## 6. Report figures (visual references)
 
-The supplied report contains these project-specific screenshots:
-
-- **Page 2 — Figure 1:** Gazebo TurtleBot3 inside an enclosed octagonal arena with nine cylindrical pillars and visible planar LiDAR rays.
-- **Page 4 — Figures 2a and 2b:** global occupancy/costmap with AMCL particle cloud; local trajectory and TF hierarchy around inflated pillar boundaries.
-- **Page 6 — Figure 3:** multi-scenario telemetry plot comparing adaptive speed limits, odometry–EKF drift and cumulative control effort.
 
 ## 7. Conclusion and proposed future work
 
