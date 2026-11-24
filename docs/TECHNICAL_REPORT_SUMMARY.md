@@ -1,7 +1,7 @@
 # Technical report summary
 
 **Source:** *Fault-Tolerant Sensor Fusion, Motion Planning, and Autonomous Navigation in ROS 2*  
-**Workspace:** `turtlebot_nav_ws` · **Middleware:** ROS 2 Humble and Nav2 · **Report date:** 24 November 2026
+**Workspace:** `turtlebot_nav_ws` · **Middleware:** ROS 2 Humble and Nav2 · 
 
 This document summarizes the supplied seven-page technical report. Numerical results below are report-reported experimental outcomes, not independently reproduced measurements in this repository.
 
@@ -89,13 +89,8 @@ The report documents:
 | 5 | Pop-up obstacle | Unmapped static box spawned on active path | Local costmap updated and Nav2 re-routed without collision |
 | 6 | Eco optimization | No sensor fault; eco profile | 65% speed cap and visibly slower cumulative control-effort growth |
 
-### Telemetry figure interpretation
 
-The report's page 6 figure compares speed limit, raw odometry versus EKF drift, and cumulative control effort over approximately 182 seconds. It marks the LiDAR blackout around 48–52 s, wheel-slip interval around 112–117 s and eco mode from about 155 s. The reported wheel-slip peak is 0.51 m; the eco profile produces a gentler cumulative control-effort slope.
-
-
-
-## 7. Conclusion and proposed future work
+## 6. Conclusion and proposed future work
 
 The report concludes that EKF sensor fusion, Nav2 planning and supervisory fault management form a resilient simulated navigation pipeline for LiDAR blackouts, wheel slip and dynamic obstacles. Proposed future work is:
 
@@ -103,5 +98,9 @@ The report concludes that EKF sensor fusion, Nav2 planning and supervisory fault
 2. Scale local costmap inflation radius dynamically using the EKF covariance trace.
 
 ---
+<img width="1366" height="768" alt="Screenshot from 2026-11-24 12-52-21" src="https://github.com/user-attachments/assets/7d9929ff-30cb-46f0-b93d-421665071636" />
+<img width="1366" height="768" alt="Screenshot from 2026-11-24 12-53-46" src="https://github.com/user-attachments/assets/b2e72e9d-0efc-4fe2-bdd3-6b195bac4ed9" />
+<img width="1366" height="768" alt="Screenshot from 2026-11-24 12-54-05" src="https://github.com/user-attachments/assets/c8718a6b-719a-4b4f-aa8f-e8c578ea920a" />
+<img width="1366" height="768" alt="Screenshot from 2026-11-24 15-57-22" src="https://github.com/user-attachments/assets/e2d22d91-e6a0-40d0-8bc9-3932bda4b434" />
 
 **Source fidelity note:** This summary follows the supplied report's stated architecture, thresholds, scenarios and measurements. It does not claim independent re-testing. Where a value is described as a report result, it should be interpreted as a reported simulation outcome.
